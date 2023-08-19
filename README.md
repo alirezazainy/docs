@@ -89,4 +89,41 @@
 > responses: 
 
 ---
+> service name: calender
+> 
+> method: **GET**
+> 
+> url: *api/v1/irrigation/calender/?cultivation=**{cultivation}**&jdate=**{jdate}***
+
+> requests: ***jdate* - *cultivation***
+
+> responses: 
+
+---
+
+> service name: calender/detail
+> 
+> method: **GET**
+> 
+> url: *api/v1/irrigation/calender/detail/?cultivation=**{cultivation}**&jdate=**{jdate}**&page=**{page}**&page_size=**{page_size}**&irr_req=**{irrigation_request}**&ordering=**{ordering}***
+
+> requests: ***cultivation* - *jdate* - *page* - *page_size* - *irrigation_request* - *ordering***
+
+> responses: 
+
+---
+
+> service name: test
+> 
+> method: **GET**
+> 
+> url: *api/v1/test/?field_id=**{field_id}**&start_date=**{start_date}**&end_date=**{end_date}***
+
+> requests: ***field_id* - *start_date* - *end_date***
+
+> responses: 
+
+---
+
+
 
