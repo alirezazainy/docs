@@ -1,9 +1,10 @@
 # Sama Controll API Services
+## Smart-Irrigation
 { Base url: [https://samacontrol.ir/samrt-irrigation/](https://samacontrol.ir/samrt-irrigation/) }
 
 ---
 
-## API Mapping
+### API Mapping
 
 > service name: et/hourly
 > 
