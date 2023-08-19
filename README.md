@@ -29,7 +29,7 @@
 > 
 > method: **GET**
 > 
-> url: */api/v1/forecast/**{field_id}***
+> url: *api/v1/forecast/**{field_id}***
 
 > requests: ***field_id***
 
