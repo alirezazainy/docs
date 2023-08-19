@@ -16,6 +16,8 @@
 
 > responses: 
 
+---
+
 > service name: et/daily
 > 
 > method: **GET**
@@ -25,6 +27,8 @@
 > requests: ***field_id***
 
 > responses: 
+
+---
 
 > service name: forecast
 > 
@@ -36,6 +40,8 @@
 
 > responses: 
 
+---
+
 > service name: calculate_et
 > 
 > method: **GET**
@@ -45,6 +51,8 @@
 > requests: ***field_id***
 
 > responses: 
+
+---
 
 > service name: calculate_et_date
 > 
@@ -56,6 +64,8 @@
 
 > responses: 
 
+---
+
 > service name: calculate_et_date_range
 > 
 > method: **GET**
@@ -65,6 +75,8 @@
 > requests: ***field_id* - *start_date* - *end_date***
 
 > responses: 
+
+---
 
 > service name: calculate_water_stress_date_range
 > 
@@ -76,4 +88,5 @@
 
 > responses: 
 
+---
 
