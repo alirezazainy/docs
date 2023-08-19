@@ -49,9 +49,29 @@
 > 
 > method: **GET**
 > 
-> url: *api/v1/calculate_et_date/field_id=**{field_id}**&date=**{date}***
+> url: *api/v1/calculate_et_date?field_id=**{field_id}**&date=**{date}***
 
 > requests: ***field_id* - *date***
+
+> responses: 
+
+> service name: calculate_et_date_range
+> 
+> method: **GET**
+> 
+> url: *api/v1/calculate_et?field_id=**{field_id}**&from=**{start_date}**&to=**{end_date}***
+
+> requests: ***field_id* - *start_date* - *end_date***
+
+> responses: 
+
+> service name: calculate_water_stress_date_range
+> 
+> method: **GET**
+> 
+> url: *api/v1/calculate_water_stress_date_range?field_id=**{field_id}**&cultivation_id=**{cultivation_id}**&from=**{start_date}**&to=**{end_date}***
+
+> requests: ***field_id* - *start_date* - *end_date* - *cultivation_id***
 
 > responses: 
 
