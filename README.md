@@ -157,12 +157,13 @@
 
 > requests: 
 > 
->    {
->        "date": ***{date}***,
->        "cultivation": ***{cultivation_id}***,
->        "irr_watered": ***{irrigation_water_needs}***,
->        "irr_time": ***{irrigation_time}***
->    }
+    {
+        "date": ***{date}***,
+        "cultivation": ***{cultivation_id}***,
+        "irr_watered": ***{irrigation_water_needs}***,
+        "irr_time": ***{irrigation_time}***
+    }
+>
 
 > responses: 
 
