@@ -10,7 +10,7 @@
 > 
 > method: **GET**
 > 
-> url: *api/v1/et/hourly/**{field_id}***
+> url: *api/v1/et/hourly/**{field_id}**/*
 
 > requests: ***field_id***
 
@@ -44,7 +44,7 @@
 > 
 > method: **GET**
 > 
-> url: *api/v1/et/daily/**{field_id}***
+> url: *api/v1/et/daily/**{field_id}**/*
 
 > requests: ***field_id***
 
@@ -56,7 +56,7 @@
 > 
 > method: **GET**
 > 
-> url: *api/v1/forecast/**{field_id}***
+> url: *api/v1/forecast/**{field_id}**/*
 
 > requests: ***field_id***
 
@@ -68,7 +68,7 @@
 > 
 > method: **GET**
 > 
-> url: *api/v1/calculate_et/**{field_id}***
+> url: *api/v1/calculate_et/**{field_id}**/*
 
 > requests: ***field_id***
 
