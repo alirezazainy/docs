@@ -15,6 +15,26 @@
 > requests: ***field_id***
 
 > responses: 
+> A json response like this schema:
+    {
+        "links": {
+            "next": null,
+            "previous": null,
+            "current": 1
+        },
+        "total_items": 24,
+        "total_pages": 1,
+        "results": [
+            {
+                "time": *"string"*,
+                "et_date": *"string"*,
+                "wind_speed": *float*,
+                "pressure": *flaot*,
+                "temperature": *float*,
+                "rel_humidity": *int*,
+                "et": *flaot*
+            }, ...
+    }    ]
 
 ---
 
