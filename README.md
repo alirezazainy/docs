@@ -16,6 +16,7 @@
 
 > responses: 
 > A json response like this schema:
+>
     {
         "links": {
             "next": null,
@@ -35,6 +36,7 @@
                 "et": *flaot*
             }, ...
     }    ]
+>
 
 ---
 
