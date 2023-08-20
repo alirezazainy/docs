@@ -252,7 +252,8 @@
     }
 >
 
-> responses: 
+> responses: ***boolean value***
+
 
 ---
 
