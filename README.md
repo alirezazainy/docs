@@ -125,5 +125,49 @@
 
 ---
 
+> service name: water_stress
+> 
+> method: **GET**
+> 
+> url: *api/v1/water_stress/?date=**{date}***
+
+> requests: ***date***
+
+> responses: 
+
+---
+
+> service name: water_stress_estimate
+> 
+> method: **GET**
+> 
+> url: *api/v1/water_stress_estimate/?cultivation_id=**{cultivation_id}**&date=**{date}**&field_id=**{field_id}***
+
+> requests: ***field_id* - *date* - *cultivation_id***
+
+> responses: 
+
+---
+
+> service name: add irrigation
+> 
+> method: **POST**
+> 
+> url: *api/v1/irrigation/*
+
+> requests: 
+>   {
+>       "date": ***{date}***,
+>       "cultivation": ***{cultivation_id}***,
+>       "irr_watered": ***{irrigation_water_needs}***,
+>       "irr_time": ***{irrigation_time}***
+>   }
+
+> responses: 
+
+---
+
+
+
 
 
