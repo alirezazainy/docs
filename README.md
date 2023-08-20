@@ -169,6 +169,34 @@
 > requests: ***cultivation* - *jdate* - *page* - *page_size* - *irrigation_request* - *ordering***
 
 > responses: 
+>
+> A json response like this schema:
+
+    {
+        "links": {
+            "next": null,
+            "previous": null,
+            "current": 1
+        },
+        "total_items": 10,
+        "total_pages": 1,
+        "results": [
+            {
+                "id": *int*,
+                "cultivation_id": *"string"*,
+                "date": *"string"*,
+                "irr_time": *"string"*,
+                "order": *int*,
+                "Dr": *float*,
+                "RAW": *float*,
+                "water_add": *float*,
+                "water_liter": *float*,
+                "water_m3": *float*,
+                "water_time": *float*,
+                "irr_req": *bool*
+            }, ...
+        ]
+    }
 
 ---
 
