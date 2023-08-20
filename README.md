@@ -15,6 +15,7 @@
 > requests: ***field_id***
 
 > responses: 
+>
 > A json response like this schema:
 >
     {
@@ -35,7 +36,8 @@
                 "rel_humidity": *int*,
                 "et": *flaot*
             }, ...
-    }    ]
+        ]
+    }
 >
 
 ---
@@ -120,6 +122,40 @@
 > requests: ***jdate* - *cultivation***
 
 > responses: 
+>
+> A json response like this schema:
+    {
+        "links": {
+            "next": null,
+            "previous": null,
+            "current": 1
+        },
+        "total_items": 31,
+        "total_pages": 1,
+        "results": [
+            {
+                "date": *"string"*,
+                "irr_watered_no": *int*,
+                "irr_watered_time": *int*,
+                "De": *float*,
+                "Dr": *float*,
+                "ETc_adj": *float*,
+                "kc": *float*,
+                "RAW": *float*,
+                "TAW": *float*,
+                "rain_daily_pre": *float*,
+                "water_add": *float*,
+                "water_liter": *float*,
+                "water_m3": *float*,
+                "water_time": *float*,
+                "stress_value": *float*,
+                "stress_free": *float*,
+                "irr_req_tmp": *float*,
+                "irr_req": *bool*
+            }, ...
+        ]
+    }
+>
 
 ---
 
@@ -190,8 +226,3 @@
 > responses: 
 
 ---
-
-
-
-
-
