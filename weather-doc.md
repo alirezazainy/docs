@@ -62,6 +62,27 @@
 >
 
 > responses: 
+>
+> A json response like this schema:
+>
+    [
+        {
+            "date": *"string"*,
+            "symbol": *int*,
+            "symbolPhrase": *"string"*,
+            "maxTemp": *float*,
+            "minTemp": *float*,
+            "maxFeelsLikeTemp": *float*,
+            "minFeelsLikeTemp": *float*,
+            "snowAccum": *float*,
+            "maxWindSpeed": *float*,
+            "maxWindGust": *float*,
+            "precipProb": *int*,
+            "uvIndex": *float*,
+            "sunset": *"string"*,
+            "sunrise": *"string"*
+        }, ...
+    ]
 
 ---
 
@@ -110,7 +131,7 @@
 > 
 > method: **POST**
 > 
-> url: *api/v1/service/field/et-detail/live/*
+> url: *api/v1/forecast/*
 
 > requests:
 > 
@@ -138,7 +159,7 @@
             "feelsLikeTemp": *float*,
             "dewPoint": *float*,
             "windDir": *int*,
-            "windDirString": null,
+            "windDirString": *"string"*,
             "windGust": *float*,
             "precipProb": *int*,
             "visibility": *float*,
@@ -148,4 +169,122 @@
     ]
 
 ---
+
+> service name: 2-days
+> 
+> method: **POST**
+> 
+> url: *api/v1/forecast/2-days/*
+
+> requests:
+> 
+    {
+        "field_id": *int*,
+        "tz": "auto"
+    }
+>
+
+> responses: 
+>
+> A json response like this schema:
+>
+    [
+        {
+            "time": *"string"*,
+            "temperature": *float*,
+            "windSpeed": *float*,
+            "relHumidity": *float*,
+            "precipRate": *float*,
+            "cloudiness": *int*,
+            "pressure": *float*,
+            "symbol": *int*,
+            "symbolPhrase": *"string"*,
+            "feelsLikeTemp": *float*,
+            "dewPoint": *float*,
+            "windDir": *int*,
+            "windDirString": *"string"*,
+            "windGust": *float*,
+            "precipProb": *int*,
+            "visibility": *float*,
+            "sunset": *"string"*,
+            "sunrise": *"string"*
+        },...
+    ]
+
+---
+
+> service name: create-field
+> 
+> method: **POST**
+> 
+> url: *api/v1/service/field/create-or-update/*
+
+> requests:
+> 
+    {
+        "field_id": *int*,
+        "lat": *float*,
+        "lon": *float*
+    }
+>
+
+> responses: 
+>
+> A json response like this schema:
+>
+    {
+        "detail":{
+            "field_id": *int*,
+            "lat": *float*,
+            "lon": *float*
+        }
+    }
+
+---
+
+> service name: detail
+> 
+> method: **POST**
+> 
+> url: *api/v1/service/field/et-detail/*
+
+> requests:
+> 
+    {
+        "field_id": *int*,
+        "tz": "auto"
+    }
+>
+
+> responses: 
+>
+> A json response like this schema:
+>
+    {
+        "id": *int*,
+        "time": *"string"*,
+        "windSpeed": *float*,
+        "pressure": *float*,
+        "temperature": *float*,
+        "relHumidity": *int*,
+        "cloudiness": *int*,
+        "precipRate": *int*,
+        "symbol": *"string"*,
+        "symbolPhrase": *"string"*,
+        "feelsLikeTemp": *float*,
+        "dewPoint": *float*,
+        "windDir": *int*,
+        "windDirString": *"string"*,
+        "windGust": *float*,
+        "precipProb": *int*,
+        "visibility": *int*,
+        "latitude": *float*,
+        "longitude": *float*,
+        "sunrise": *"string"*,
+        "sunset": *"string"*
+    }
+
+---
+
+
 
