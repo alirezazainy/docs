@@ -286,5 +286,89 @@
 
 ---
 
+> service name: range
+> 
+> method: **POST**
+> 
+> url: *api/v1/service/field/et-detail/range/*
+
+> requests:
+> 
+    {
+    "from_date": "2023-08-21T07:14:15.639Z",
+    "to_date": "2023-08-21T07:14:15.639Z",
+    "field_id": 0,
+    "tz": "auto"
+    }
+>
+
+> responses: 
+
+
+---
+
+> service name: field_forecast
+> 
+> method: **POST**
+> 
+> url: *api/v1/service/field/forecast/*
+
+> requests:
+> 
+    {
+        "field_id": *int*,
+        "tz": "auto"
+    }
+>
+
+> responses: 
+>
+> A json response like this schema:
+>
+    [
+        {
+            "time": *"string"*,
+            "temperature": *float*,
+            "windSpeed": *float*,
+            "relHumidity": *int*,
+            "precipRate": *float*,
+            "cloudiness": *int*,
+            "pressure": *float*,
+            "symbol": *int*,
+            "symbolPhrase": *"string"*,
+            "feelsLikeTemp": *float*,
+            "dewPoint": *float*,
+            "windDir": *int*,
+            "windDirString": *"string"*,
+            "windGust": *float*,
+            "precipProb": *int*,
+            "visibility": *float*,
+            "sunset": *"string"*,
+            "sunrise": *"string"*
+        }, ...
+    ]
+
+---
+
+> service name: weather_now
+> 
+> method: **POST**
+> 
+> url: *api/v1/service/field/historical/*
+
+> requests:
+> 
+    {
+        "field_id": *int*,
+        "tz": "auto",
+        "from_date": *"string"*,
+        "to_date": *"string"*
+    }
+>
+
+> responses: 
+
+---
+
 
 
