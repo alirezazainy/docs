@@ -1,6 +1,6 @@
 # Sama Controll API Services
 ## Smart-Irrigation
-{ Base url: [https://samacontrol.ir/samrt-irrigation/](https://samacontrol.ir/samrt-irrigation/) }
+{ Base url: [https://samacontrol.ir/smart-irrigation/](https://samacontrol.ir/smart-irrigation/) }
 
 ---
 
